@@ -1,0 +1,38 @@
+import numpy as np
+
+for i in range(15):
+    prob=np.random.randint(32)
+    if prob==31:
+        print("SS:","31")
+    elif prob%15==0 or prob%15==1 or prob%15==14 :
+        yil=np.random.randint(1994,2006)
+        x1=["olaya","hususa","noktaya","duruma","vakaya","Türkiye'nin haline","hale","hadiseye"]
+        y1=["yaşanan","vuku bulan","meydana gelen","rücu eden","zuhur eden"]
+        z1=["yılında","senesinde","dolaylarında"]
+        q1=["Bir saniye...","Önce ","Şimdi ","Açıklayacağım ama önce "]
+        t1=["inceleyelim...","göz atalım...","bakalım..."]
+        print("SS:",np.random.choice(q1)+str(yil),np.random.choice(z1),np.random.choice(y1),"şu" ,np.random.choice(x1),np.random.choice(t1))
+    elif prob%15==3:
+        print("SS:","Bu ifade zinhar doğru değildir.")
+    elif prob%15==5 or prob%15==6 or prob%15==12:
+        x2=["DHKPC","PKK","Amerika","FETÖ","DAEŞ","Milf Seven Gençler Derneği"]
+        y2=["kişilerin","şahısların","kurumların","örgütlerin"]
+        print("SS:","Biz bu",np.random.choice(y2),np.random.choice(x2),"ile iltisaklı olduğunu tespit ettik.")
+    elif prob%15==7 :
+        print("SS:","Bilen bilir sigorta benim için bir davadır.")
+    elif prob%15==9:
+        print("SS:","Bir tane KIA cipim var sigorta şirketimin üstüne kayıtlı.")
+    elif prob%15==10:
+        print("SS:","Hayatta en çok sevdiğim ses, sigorta ofisimdeki poliçe basan yazıcıdan çıkan cırt cırt ses")
+    elif prob%15==8:
+        print("SS:","(Shows nonsense picture of random people)")
+    elif prob%15==11:
+        print("SS:","Açıklayacağım.")
+    elif prob%15==4:
+        print("SS:","Sürdürülebilir D E Z E N F O R M A S Y O N")
+    elif prob&15==2:
+        print("SS:","(Uses reverse question card from his deck)")
+    elif prob%15==13:
+        print("SS:","Iıı Iıı...")
+
+    
